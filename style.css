@@ -1,0 +1,43 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 2px solid #cccccc;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.box {
+  border: 2px solid #cccccc;
+}
+
+.p-custom {
+  padding-top: 50px;
+}
+
+.delete {
+  float: right;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li {
+  margin: 2px 0px;
+  padding: 5px 0px;
+  list-style: none;
+  border-bottom: 2px solid #cccccc;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
