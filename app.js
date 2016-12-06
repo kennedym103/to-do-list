@@ -1,28 +1,23 @@
 function addListItem() {
    var text = $('#newItem').val();
-   if ($('#newItem').val() === '') {
-
-   }
-   else {
-      $('#list').append('<li>'+' <input type="checkbox" class="done" /> ' + text + '  <button class="delete" >Delete</button>' + '</li>');
+   if ($('#newItem').val() === '') {} else {
+      $('#list').append('<li>' + ' <button  class="done"></button> ' + text + '  <button class="delete" >X</button>' + '</li>');
       localStorage.setItem("todolist", $('#list').html());
       $('#newItem').val('')
    }
 }
 
 function finishItem() {
-   if ( $(this).parent().css('text-decoration') === 'line-through') {
-      $(this).parent().css('text-decoration', 'none');
-   }
-   else {
-      $(this).parent().css('text-decoration', 'line-through');
-   }
+   if ($(this).parent().css('background') === 'linear-gradient(to bottom, #4e4e4e, #3d3d3d)') {
+      $(this).parent().css('background', 'linear-gradient(to bottom, #656565, #4e4e4e)');
+   } else if ($(this).parent().css('background') === 'linear-gradient(to bottom, #656565, #4e4e4e)'){
+      $(this).parent().css('background', 'linear-gradient(to bottom, #4e4e4e, #3d3d3d)');
+   } else  $(this).parent().css('background', 'linear-gradient(to bottom, #4e4e4e, #3d3d3d)');
 }
 
 $(document).ready(function () {
 
    $('#addItem').on('click', addListItem);
-
 
    $(document).on("click", ".delete", function () {
       $(this).parent().remove();
@@ -31,7 +26,6 @@ $(document).ready(function () {
    $(document).on("click", ".done", finishItem);
 });
 
-
-$(function(){
-  $('#list').html(localStorage.getItem("todolist"));
+$(function () {
+   $('#list').html(localStorage.getItem("todolist"));
 });
