@@ -8,11 +8,11 @@ function addListItem() {
 }
 
 function finishItem() {
-   if ($(this).parent().css('background') === 'linear-gradient(to bottom, #4e4e4e, #3d3d3d)') {
-      $(this).parent().css('background', 'linear-gradient(to bottom, #656565, #4e4e4e)');
-   } else if ($(this).parent().css('background') === 'linear-gradient(to bottom, #656565, #4e4e4e)'){
-      $(this).parent().css('background', 'linear-gradient(to bottom, #4e4e4e, #3d3d3d)');
-   } else  $(this).parent().css('background', 'linear-gradient(to bottom, #4e4e4e, #3d3d3d)');
+   if ($(this).parent().css('background') === 'linear-gradient(to bottom, #656565, #4e4e4e)'){
+      $(this).parent().css({'background': '#3d3d3d', 'border-top': '2px solid #535353'});
+   } else if ($(this).parent().css('background') ===  '#3d3d3d') {
+         $(this).parent().css({'background': 'linear-gradient(to bottom, #656565, #4e4e4e)', 'border-top': '2px solid #6a6a6a'})
+   }
 }
 
 $(document).ready(function () {
