@@ -1,8 +1,13 @@
 function addListItem() {
    var text = $('#newItem').val();
-   $('#list').append('<li>'+' <input type="checkbox" class="done" /> ' + text + '  <button class="delete" >Delete</button>' + '</li>');
-   localStorage.setItem("todolist", $('#list').html());
-   $('#newItem').val('');
+   if ($('#newItem').val() === '') {
+
+   }
+   else {
+      $('#list').append('<li>'+' <input type="checkbox" class="done" /> ' + text + '  <button class="delete" >Delete</button>' + '</li>');
+      localStorage.setItem("todolist", $('#list').html());
+      $('#newItem').val('')
+   }
 }
 
 function finishItem() {
@@ -15,16 +20,18 @@ function finishItem() {
 }
 
 $(document).ready(function () {
-   $(function(){
-     $('#list').html(localStorage.getItem("todolist"));
-   });
 
    $('#addItem').on('click', addListItem);
 
 
    $(document).on("click", ".delete", function () {
       $(this).parent().remove();
+      localStorage.setItem("todolist", $('#list').html());
    });
    $(document).on("click", ".done", finishItem);
+});
 
+
+$(function(){
+  $('#list').html(localStorage.getItem("todolist"));
 });

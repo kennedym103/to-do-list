@@ -1,6 +1,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  color: #666;
+}
+
+body textarea:focus, body input:focus {
+  outline: none;
 }
 
 h1 {
@@ -8,36 +13,80 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px 0px;
-  border-bottom: 2px solid #cccccc;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .box {
-  border: 2px solid #cccccc;
+  border: 2px solid #ccc;
 }
 
 .p-custom {
   padding-top: 50px;
 }
 
-.delete {
-  float: right;
+.row__addItem {
+  margin-top: 15px;
+}
+
+.row__addItem .col__addItem {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row__addItem .col__addItem input {
+  width: calc(100% - 55px);
+  padding-right: 5px;
+}
+
+.row__addItem .col__addItem input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.row__addItem .col__addItem input::-moz-placeholder {
+  /* Firefox 19+ */
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.row__addItem .col__addItem input:-ms-input-placeholder {
+  /* IE 10+ */
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.row__addItem .col__addItem input:-moz-placeholder {
+  /* Firefox 18- */
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.row__addItem .col__addItem button {
+  transform: translate(-5px, -1px);
+  width: 50px;
+  height: 28px;
+  margin: 0;
 }
 
 ul {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 ul li {
-  margin: 2px 0px;
-  padding: 5px 0px;
+  margin: 2px 5px 2px 0px;
+  padding: 5px 0;
   list-style: none;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #ccc;
 }
 
 ul li:last-child {
   border-bottom: none;
+}
+
+ul li .delete {
+  float: right;
 }
