@@ -201,6 +201,7 @@ ul li .delete:hover {
   }
   .btn__addItem {
     position: relative;
+    left: -3px;
     top: 2px !important;
     transform: translateY(2px);
   }
