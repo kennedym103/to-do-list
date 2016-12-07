@@ -26,3 +26,8 @@ $(document).ready(function () {
 $(function () {
    $('#list').html(localStorage.getItem("todolist"));
 });
+
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  $('.addBtn').toggleClass('addBtn-mobile');
+}
