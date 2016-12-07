@@ -1,10 +1,8 @@
-
 body {
    font-family: 'Open Sans', sans-serif;
    font-size: 14px;
    color: #eee;
    background-color: #2d2d2d !important;
-
 
    textarea:focus,
    input:focus,
@@ -40,10 +38,7 @@ h1 {
 }
 
 .row__addItem {
-
    .col__addItem {
-
-
       input {
          width: calc(100% - 55px);
          padding-right: 5px;
@@ -89,82 +84,87 @@ h1 {
          background-image: linear-gradient(to bottom, #479BAC, #408a99);
          border: none;
          font-size: 20px;
-         transition: ease .3s;
+         transition: ease 0.3s;
+
          &:hover {
             background-image: linear-gradient(to bottom, #4193a3, #3a7d8a);
          }
       }
+   }
 }
 
 ul {
    padding: 0;
    margin: 0;
 
-
    .done-checked {
-     background-color: #3d3d3d;
-     border-top: 2px solid #535353;
-     height: 38px;
-     color: #a2a2a2;
-     .done {
-        border:none;
-        background: #6a6a6a;
-     }
-     .done::before {
-        content: "\2713 ";
-        color: #909090;
-     }
-     span {
-       padding-left: 5px;
-     }
-     .delete {
-        color: #eee;
-     }
+      background-color: #3d3d3d;
+      border-top: 2px solid #535353;
+      height: 38px;
+      color: #a2a2a2;
+
+      .done {
+         border: none;
+         background: #6a6a6a;
+      }
+
+      .done::before {
+         content: "\2713 ";
+         color: #909090;
+      }
+
+      span {
+         padding-left: 5px;
+      }
+
+      .delete {
+         color: #eee;
+      }
    }
 
    li {
-     height: 38px;
-      margin: 0px 5px 0px 0;
-      padding: 0px;
+      height: 38px;
+      margin: 0 5px 0 0;
+      padding: 0;
       list-style: none;
       background-color: #4e4e4e;
       box-shadow: 0 1px 3px #1a1a1a;
       border-bottom: 1px solid #3d3d3d;
       border-top: 2px solid #6a6a6a;
 
-
-
-
       &:last-child {
          border-bottom: none;
       }
 
+      &:first-child {
+         margin-top: 20px;
+      }
+
       span {
-        padding-left: 5px;
-        color: #bbb;
+         padding-left: 5px;
+         color: #bbb;
       }
 
       .done {
          transition: 0.3s;
          width: 50px;
          height: 37px;
-         margin: 0px;
+         margin: 0;
          position: relative;
          top: -1px;
-         background-color: #777777;
+         background-color: #777;
          border: none;
          border-bottom: 2px solid #646464;
          box-shadow: 0 1px 3px #1a1a1a;
       }
+
       .done::before {
-         content:"\2022";
+         content: "\2022";
          font-size: 20px;
          position: relative;
          top: 2px;
          color: #aaa9a9;
       }
-
-
 
       .delete {
          float: right;
@@ -180,7 +180,6 @@ ul {
          position: relative;
          top: -1px;
          border-bottom: 2px solid #c9463c;
-
 
          &:hover {
             background: #f52a23;
@@ -200,13 +199,13 @@ ul {
    position: relative;
    top: 4px;
    border: 1px solid red;
-
 }
 
 @media (max-width: 768px) {
    body {
       font-size: 14px;
    }
+
    li {
       span {
          font-size: 11px;
@@ -218,14 +217,10 @@ ul {
    }
 
    .row__addItem {
-
       .col__addItem {
-
-
          input {
             width: calc(100% - 35px);
          }
       }
    }
-
 }

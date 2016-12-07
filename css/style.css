@@ -92,7 +92,6 @@ h1 {
 ul {
   padding: 0;
   margin: 0;
-  padding-top: 20px;
 }
 
 ul .done-checked {
@@ -122,8 +121,8 @@ ul .done-checked .delete {
 
 ul li {
   height: 38px;
-  margin: 0px 5px 0px 0;
-  padding: 0px;
+  margin: 0 5px 0 0;
+  padding: 0;
   list-style: none;
   background-color: #4e4e4e;
   box-shadow: 0 1px 3px #1a1a1a;
@@ -135,6 +134,10 @@ ul li:last-child {
   border-bottom: none;
 }
 
+ul li:first-child {
+  margin-top: 20px;
+}
+
 ul li span {
   padding-left: 5px;
   color: #bbb;
@@ -144,10 +147,10 @@ ul li .done {
   transition: 0.3s;
   width: 50px;
   height: 37px;
-  margin: 0px;
+  margin: 0;
   position: relative;
   top: -1px;
-  background-color: #777777;
+  background-color: #777;
   border: none;
   border-bottom: 2px solid #646464;
   box-shadow: 0 1px 3px #1a1a1a;
@@ -186,6 +189,12 @@ ul li .delete:hover {
   background-image: linear-gradient(to bottom, #e6524a, #db433b);
   text-decoration: none;
   box-shadow: 0 1px 3px #1a1a1a;
+}
+
+.addBtn-mobile {
+  position: relative;
+  top: 4px;
+  border: 1px solid red;
 }
 
 @media (max-width: 768px) {
