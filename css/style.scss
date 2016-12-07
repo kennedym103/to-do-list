@@ -94,11 +94,6 @@ h1 {
             background-image: linear-gradient(to bottom, #4193a3, #3a7d8a);
          }
       }
-      .addBtn-mobile {
-         position: relative;
-         top: 2px;
-
-   }
 }
 
 ul {
@@ -199,6 +194,12 @@ ul {
          }
       }
    }
+}
+
+.addBtn-mobile {
+   position: relative;
+   top: 4px;
+
 }
 
 @media (max-width: 768px) {
