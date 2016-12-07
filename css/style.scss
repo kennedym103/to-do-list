@@ -196,3 +196,19 @@ ul {
       }
    }
 }
+
+@media (max-width: 768px) {
+   body {
+      font-size: 10px;
+   }
+   input {
+      width: calc(100% - 35px) !important;
+   }
+   button {
+      width: 30px !important;
+   }
+   .btn__addItem {
+      position: relative;
+      top: 2px !important;
+   }
+}

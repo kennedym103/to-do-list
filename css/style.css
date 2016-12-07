@@ -187,3 +187,19 @@ ul li .delete:hover {
   text-decoration: none;
   box-shadow: 0 1px 3px #1a1a1a;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+  input {
+    width: calc(100% - 35px) !important;
+  }
+  button {
+    width: 30px !important;
+  }
+  .btn__addItem {
+    position: relative;
+    top: 2px !important;
+  }
+}
