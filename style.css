@@ -200,6 +200,6 @@ ul li .delete:hover {
   }
   .btn__addItem {
     position: relative;
-    top: 0px !important;
+    top: 2px !important;
   }
 }
