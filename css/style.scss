@@ -203,6 +203,7 @@ ul {
    }
    input {
       width: calc(100% - 35px) !important;
+      padding-right: 0px;
    }
    button {
       width: 30px !important;
@@ -211,5 +212,6 @@ ul {
       position: relative;
       top: 2px !important;
       transform: translateY(2px);
+
    }
 }

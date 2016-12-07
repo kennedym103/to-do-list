@@ -194,6 +194,7 @@ ul li .delete:hover {
   }
   input {
     width: calc(100% - 35px) !important;
+    padding-right: 0px;
   }
   button {
     width: 30px !important;
