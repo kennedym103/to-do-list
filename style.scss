@@ -91,7 +91,21 @@ ul {
    margin: 0;
    padding-top: 20px;
 
+   .done-checked {
+     background-color: #3d3d3d;
+     border-top: 2px solid #535353;
+     height: 38px;
+     span {
+       position: relative;
+       top: -10px;
+       padding-left: 5px;
+       color: #a2a2a2;
+     }
+
+   }
+
    li {
+     height: 38px;
       margin: 0px 5px 0px 0;
       padding: 0px;
       list-style: none;
@@ -100,14 +114,22 @@ ul {
       border-bottom: 1px solid #3d3d3d;
       border-top: 2px solid #6a6a6a;
 
+
       &:last-child {
          border-bottom: none;
+      }
+
+      span {
+        position: relative;
+        top: -10px;
+        padding-left: 5px;
+        color: #bbb;
       }
 
       .done {
          transition: 0.3s;
          width: 50px;
-         height: 34px;
+         height: 36px;
          margin: 0px;
          background: #656565;
          background-image: -webkit-linear-gradient(top, #656565, #4e4e4e);
@@ -117,6 +139,8 @@ ul {
          background-image: linear-gradient(to bottom, #656565, #4e4e4e);
          border: none;
       }
+
+
 
       .delete {
          float: right;
@@ -128,7 +152,10 @@ ul {
          border: none;
          transition: 0.3s;
          width: 50px;
-         height: 34px;
+         height: 38px;
+         position: relative;
+         top: -1px;
+         border-bottom: 2px solid #c9463c;
 
 
          &:hover {
