@@ -41,7 +41,7 @@ h1 {
 .row__addItem {
    .col__addItem {
       .col__addItem-container {
-         display:inline !important;
+         display: inline !important;
          width: auto;
          input {
             width: calc(100% - 55px);
@@ -274,7 +274,6 @@ ul {
 
          .col__addItem-container {
             display: inline;
-            height: 36px;
             width: auto;
 
             input {
@@ -282,8 +281,6 @@ ul {
                font-size: 12px;
                border-radius: none;
                height: 36px;
-               padding-top: 10px;
-               padding-bottom: 4px;
                transform: translateY(2px);
             }
             .btn__addItem {
