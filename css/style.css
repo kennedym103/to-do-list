@@ -261,6 +261,7 @@ ul li .delete:hover {
     width: 30px !important;
   }
   .row__addItem .col__addItem .col__addItem-container {
+    display: inline;
     height: 36px;
     width: auto;
   }
