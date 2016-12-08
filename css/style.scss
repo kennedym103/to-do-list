@@ -271,25 +271,24 @@ ul {
 
    .row__addItem {
       .col__addItem {
-         input {
-            width: calc(100% - 35px);
-            font-size: 12px;
-            border-radius: none;
+         .col__addItem-container {
+            height: 36px;
+
+            input {
+               width: calc(100% - 35px);
+               font-size: 12px;
+               border-radius: none;
+               height: 36px;
+               padding-top: 10px;
+               padding-bottom: 4px;
+               transform: translateY(2px);
+            }
+            .btn__addItem {
+               transform: translateY(0px);
+               height: 36px;
+            }
          }
-      }
-   }
-   .row__addItem-mobile {
-      .col__addItem {
-         input {
-            width: calc(100% - 35px);
-            font-size: 12px;
-            border-radius: none;
-         }
-         .addBtn {
-            position: relative;
-            top: 4px;
-            border: 1px solid red;
-         }
+
       }
    }
 }

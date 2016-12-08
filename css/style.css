@@ -260,19 +260,20 @@ ul li .delete:hover {
   button {
     width: 30px !important;
   }
-  .row__addItem .col__addItem input {
+  .row__addItem .col__addItem .col__addItem-container {
+    height: 36px;
+  }
+  .row__addItem .col__addItem .col__addItem-container input {
     width: calc(100% - 35px);
     font-size: 12px;
     border-radius: none;
+    height: 36px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    transform: translateY(2px);
   }
-  .row__addItem-mobile .col__addItem input {
-    width: calc(100% - 35px);
-    font-size: 12px;
-    border-radius: none;
-  }
-  .row__addItem-mobile .col__addItem .addBtn {
-    position: relative;
-    top: 4px;
-    border: 1px solid red;
+  .row__addItem .col__addItem .col__addItem-container .btn__addItem {
+    transform: translateY(0px);
+    height: 36px;
   }
 }
