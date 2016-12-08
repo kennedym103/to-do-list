@@ -250,12 +250,6 @@ ul li .delete:hover {
   box-shadow: 0 1px 3px #1a1a1a;
 }
 
-.addBtn-mobile {
-  position: relative;
-  top: 4px;
-  border: 1px solid red;
-}
-
 @media (max-width: 768px) {
   body {
     font-size: 14px;
@@ -268,5 +262,17 @@ ul li .delete:hover {
   }
   .row__addItem .col__addItem input {
     width: calc(100% - 35px);
+    font-size: 12px;
+    border-radius: none;
+  }
+  .row__addItem-mobile .col__addItem input {
+    width: calc(100% - 35px);
+    font-size: 12px;
+    border-radius: none;
+  }
+  .row__addItem-mobile .col__addItem .addBtn {
+    position: relative;
+    top: 4px;
+    border: 1px solid red;
   }
 }

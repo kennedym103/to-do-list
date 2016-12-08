@@ -252,11 +252,7 @@ ul {
    }
 }
 
-.addBtn-mobile {
-   position: relative;
-   top: 4px;
-   border: 1px solid red;
-}
+
 
 @media (max-width: 768px) {
    body {
@@ -277,6 +273,22 @@ ul {
       .col__addItem {
          input {
             width: calc(100% - 35px);
+            font-size: 12px;
+            border-radius: none;
+         }
+      }
+   }
+   .row__addItem-mobile {
+      .col__addItem {
+         input {
+            width: calc(100% - 35px);
+            font-size: 12px;
+            border-radius: none;
+         }
+         .addBtn {
+            position: relative;
+            top: 4px;
+            border: 1px solid red;
          }
       }
    }
