@@ -12,7 +12,7 @@ function addListItem() {
 //toggle checked button on and off
 
 function finishItem() {
-   $(this).parent().toggleClass('done-checked'); 
+   $(this).parent().toggleClass('done-checked');
    localStorage.setItem("todolist", $('#list').html());
 }
 
@@ -29,9 +29,16 @@ $(document).ready(function () {
       $(this).parent().remove();
       localStorage.setItem("todolist", $('#list').html());
    });
+
    $(document).on("click", ".done", finishItem);
 
 });
+
+$(document).keydown(function(keyPressed) {
+  if (keyPressed.keyCode === 13) {
+    addListItem();
+  }
+ });
 
 $(function () {
    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
