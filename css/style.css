@@ -262,7 +262,7 @@ ul li .delete:hover {
   }
   .row__addItem .col__addItem .col__addItem-container {
     height: 36px;
-    width: 100%;
+    width: auto;
   }
   .row__addItem .col__addItem .col__addItem-container input {
     width: calc(100% - 35px);
