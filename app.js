@@ -12,7 +12,7 @@ function addListItem() {
 //toggle checked button on and off
 
 function finishItem() {
-   $(this).parent().toggleClass('done-checked');
+   $(this).parent().toggleClass('done-checked'); 
    localStorage.setItem("todolist", $('#list').html());
 }
 

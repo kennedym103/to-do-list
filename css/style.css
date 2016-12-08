@@ -147,6 +147,13 @@ h1 {
   background-image: linear-gradient(to bottom, #4193a3, #3a7d8a);
 }
 
+.row__addItem .col__addItem .btn__addItem svg:not(:root) {
+  color: #eeeeee;
+  fill: #eeeeee;
+  width: 13px;
+  transform: translateY(4px);
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -250,6 +257,13 @@ ul li .delete:hover {
   box-shadow: 0 1px 3px #1a1a1a;
 }
 
+ul li .delete svg:not(:root) {
+  fill: #eeeeee;
+  color: #eeeeee;
+  width: 15px;
+  transform: translateY(4px);
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 14px;
@@ -272,7 +286,16 @@ ul li .delete:hover {
     height: 36px;
   }
   .row__addItem .col__addItem .col__addItem-container .btn__addItem {
-    transform: translateY(0px);
-    font-size: 13px;
+    transform: translateY(1px);
+  }
+  .row__addItem .col__addItem .col__addItem-container .btn__addItem svg:not(:root) {
+    width: 11px;
+    transform: translateY(4px);
+  }
+  .delete svg:not(:root) {
+    fill: #eeeeee;
+    color: #eeeeee;
+    width: 12px;
+    transform: translate(2px, 4px);
   }
 }
