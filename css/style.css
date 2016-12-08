@@ -263,16 +263,16 @@ ul li .delete:hover {
   .row__addItem .col__addItem .col__addItem-container {
     display: inline;
     width: auto;
+    height: auto;
   }
   .row__addItem .col__addItem .col__addItem-container input {
     width: calc(100% - 35px);
     font-size: 12px;
     border-radius: none;
     height: 36px;
-    transform: translateY(2px);
   }
   .row__addItem .col__addItem .col__addItem-container .btn__addItem {
     transform: translateY(0px);
-    height: 36px;
+    font-size: 15px;
   }
 }

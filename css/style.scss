@@ -275,17 +275,17 @@ ul {
          .col__addItem-container {
             display: inline;
             width: auto;
+            height: auto;
 
             input {
                width: calc(100% - 35px);
                font-size: 12px;
                border-radius: none;
                height: 36px;
-               transform: translateY(2px);
             }
             .btn__addItem {
                transform: translateY(0px);
-               height: 36px;
+               font-size: 15px;
             }
          }
 
