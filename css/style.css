@@ -273,6 +273,6 @@ ul li .delete:hover {
   }
   .row__addItem .col__addItem .col__addItem-container .btn__addItem {
     transform: translateY(0px);
-    font-size: 15px;
+    font-size: 13px;
   }
 }
