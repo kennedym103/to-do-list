@@ -43,15 +43,19 @@ h1 {
       .col__addItem-container {
          display: inline !important;
          width: auto;
+
+         li {
+           background-color: #6a6a6a;
+         }
          input {
-            width: calc(100% - 55px);
+            background: transparent;
             padding-right: 5px;
             padding-left: 10px;
             height: 36px;
             border: none;
             color: #bbb;
-            background-color: #6a6a6a;
-            padding-left: 5px;
+
+
          }
 
          input::-webkit-input-placeholder {
@@ -78,25 +82,10 @@ h1 {
             font-weight: 400;
          }
 
-         .btn__addItem {
-            position: relative;
-            top: 1px;
-            left: -5px;
-            width: 50px;
-            height: 36px;
-            margin: 0;
-            background-image: linear-gradient(to bottom, #479BAC, #408a99);
-            border: none;
-            font-size: 20px;
-            transition: ease 0.3s;
 
-            &:hover {
-               background-image: linear-gradient(to bottom, #4193a3, #3a7d8a);
-            }
-         }
       }
       input {
-         width: calc(100% - 55px);
+
          padding-right: 5px;
          padding-left: 10px;
          height: 36px;
@@ -131,20 +120,23 @@ h1 {
       }
 
       .btn__addItem {
-         position: relative;
-         top: 1px;
-         left: -5px;
+        float: right;
          width: 50px;
-         height: 36px;
          margin: 0;
          background-image: linear-gradient(to bottom, #479BAC, #408a99);
          border: none;
          font-size: 20px;
          transition: ease 0.3s;
+         height: 37px;
+         position: relative;
+         top: -1px;
+
+
 
          &:hover {
             background-image: linear-gradient(to bottom, #4193a3, #3a7d8a);
          }
+
 
          svg:not(:root) {
             color: #eeeeee;
@@ -291,19 +283,29 @@ ul {
             width: auto;
             height: auto;
 
-            input {
-               width: calc(100% - 35px);
-               font-size: 12px;
-               border-radius: none;
-               height: 36px;
+            ul {
+              padding: 0px;
+              li {
+                padding: 0px;
+                background: transparent;
+                border: none;
+                input {
+
+                   font-size: 12px;
+                   border-radius: none;
+                   height: 36px;
+                }
+                .btn__addItem {
+
+                   svg:not(:root) {
+                      width: 11px;
+                      transform: translateY(4px);
+                   }
+                }
+              }
             }
-            .btn__addItem {
-               transform: translateY(1px);
-               svg:not(:root) {
-                  width: 11px;
-                  transform: translateY(4px);
-               }
-            }
+
+
          }
       }
    }

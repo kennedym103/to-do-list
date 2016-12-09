@@ -43,15 +43,17 @@ h1 {
   width: auto;
 }
 
+.row__addItem .col__addItem .col__addItem-container li {
+  background-color: #6a6a6a;
+}
+
 .row__addItem .col__addItem .col__addItem-container input {
-  width: calc(100% - 55px);
+  background: transparent;
   padding-right: 5px;
   padding-left: 10px;
   height: 36px;
   border: none;
   color: #bbb;
-  background-color: #6a6a6a;
-  padding-left: 5px;
 }
 
 .row__addItem .col__addItem .col__addItem-container input::-webkit-input-placeholder {
@@ -78,25 +80,7 @@ h1 {
   font-weight: 400;
 }
 
-.row__addItem .col__addItem .col__addItem-container .btn__addItem {
-  position: relative;
-  top: 1px;
-  left: -5px;
-  width: 50px;
-  height: 36px;
-  margin: 0;
-  background-image: linear-gradient(to bottom, #479BAC, #408a99);
-  border: none;
-  font-size: 20px;
-  transition: ease 0.3s;
-}
-
-.row__addItem .col__addItem .col__addItem-container .btn__addItem:hover {
-  background-image: linear-gradient(to bottom, #4193a3, #3a7d8a);
-}
-
 .row__addItem .col__addItem input {
-  width: calc(100% - 55px);
   padding-right: 5px;
   padding-left: 10px;
   height: 36px;
@@ -131,16 +115,16 @@ h1 {
 }
 
 .row__addItem .col__addItem .btn__addItem {
-  position: relative;
-  top: 1px;
-  left: -5px;
+  float: right;
   width: 50px;
-  height: 36px;
   margin: 0;
   background-image: linear-gradient(to bottom, #479BAC, #408a99);
   border: none;
   font-size: 20px;
   transition: ease 0.3s;
+  height: 37px;
+  position: relative;
+  top: -1px;
 }
 
 .row__addItem .col__addItem .btn__addItem:hover {
@@ -279,16 +263,20 @@ ul li .delete svg:not(:root) {
     width: auto;
     height: auto;
   }
-  .row__addItem .col__addItem .col__addItem-container input {
-    width: calc(100% - 35px);
+  .row__addItem .col__addItem .col__addItem-container ul {
+    padding: 0px;
+  }
+  .row__addItem .col__addItem .col__addItem-container ul li {
+    padding: 0px;
+    background: transparent;
+    border: none;
+  }
+  .row__addItem .col__addItem .col__addItem-container ul li input {
     font-size: 12px;
     border-radius: none;
     height: 36px;
   }
-  .row__addItem .col__addItem .col__addItem-container .btn__addItem {
-    transform: translateY(1px);
-  }
-  .row__addItem .col__addItem .col__addItem-container .btn__addItem svg:not(:root) {
+  .row__addItem .col__addItem .col__addItem-container ul li .btn__addItem svg:not(:root) {
     width: 11px;
     transform: translateY(4px);
   }
