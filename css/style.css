@@ -45,6 +45,7 @@ h1 {
 
 .row__addItem .col__addItem .col__addItem-container li {
   background-color: #6a6a6a;
+  margin-top: 0px;
 }
 
 .row__addItem .col__addItem .col__addItem-container input {
